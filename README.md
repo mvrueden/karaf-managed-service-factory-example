@@ -3,6 +3,10 @@ I encountered an issue while upgrading from Karaf 4.1.5 to 4.2.3.
 This provides an example to reproduce the problem locally in order to find a solution for it.
 See issue [KARAF-6181](https://issues.apache.org/jira/browse/KARAF-6181) for more details.
 
+The `config:edit` command changed. 
+With `config:edit --factory <pid> --alias <alias>` everything works as expected.
+Archiving the repo.
+
 ## How to reproduce
 
 - Checkout this repository
