@@ -10,7 +10,7 @@ The issue can be found here TODO add link.
 - Download latest Apache Karaf 4.2.3 Distribution from [here](http://www.apache.org/dyn/closer.lua/karaf/4.2.3/apache-karaf-4.2.3.tar.gz).
 - Extract the archive
 - Start the container `./bin/karaf`.
-- Install `aries-blueprint`: `feature-install aries-blueprint`.
+- Install `aries-blueprint`: `feature:install aries-blueprint`.
 - Install the bundle: `install -s mvn:org.opennms.dummy/managed-service-factory/1.0-SNAPSHOT`
 - Verify via `list`
 - Now add some configuration files, e.g.
@@ -22,4 +22,4 @@ config:update
 ```
 
 Now with a `log:tail` you can see, that there is no log output.
-With `config:list "(service.pid=org.opennms*)" you can see, that there is no `service.factoryPid` assigned, indicating it was not correctly "populated". Also restarting the container did not work.
+With `config:list "(service.pid=org.opennms*)"` you can see, that there is no `service.factoryPid` assigned, indicating it was not correctly "populated". Also restarting the container did not work.
