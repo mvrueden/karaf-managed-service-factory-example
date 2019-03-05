@@ -1,7 +1,7 @@
 # Karaf ManagedServiceFactory Example
 I encountered an issue while upgrading from Karaf 4.1.5 to 4.2.3. 
 This provides an example to reproduce the problem locally in order to find a solution for it.
-The issue can be found here TODO add link.
+See issue [KARAF-6181](https://issues.apache.org/jira/browse/KARAF-6181) for more details.
 
 ## How to reproduce
 
